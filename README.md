@@ -22,3 +22,9 @@ To view a live example, **[click here](https://emilymamcarz.github.io/)**
 
 <img src="README_images/ECE444-PRA1-Activity-1.png" alt="Activity #1 Screenshot" width="300"/>
 
+### Activity-2: Adding your personal information.
+
+<img src="README_images/ECE444-PRA1-Activity-2.1.png" alt="Activity #2.1 Screenshot" width="300"/>
+
+<img src="README_images/ECE444-PRA1-Activity2.2.png" alt="Activity #2.1 Screenshot" width="300"/>
+
