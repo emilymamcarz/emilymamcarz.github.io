@@ -447,6 +447,19 @@
       </div>
     </section>
 
+    <!-- Recent Projects -->
+    <section id="recent-projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Recent Projects</h3>
+      <div class="container">
+        <div id="recent-projects-container" class="row">
+          <!-- JavaScript will inject project cards here -->
+        </div>
+        <div class="center" style="margin-top: 20px;">
+          <button id="load-more-btn" class="btn waves-effect waves-light teal">Load More</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text teal">Skills</h3>
@@ -689,6 +702,95 @@
       })
     })
   </script>
+
+  <script>
+    // Array of project objects
+    const projects = [
+      {
+        title: "SavvyScooper",
+        image: "/assets/emily_img/savyscooper.png",
+        description: "An arduino robot to autonomously collect garbage on beaches.",
+        tools: "Arduino, L298N Motor Driver Module, IR Sensor",
+        accomplishments: [
+          "Beach-cleaning device equipped with IR sensors.",
+          "Autonomously navigates the shoreline, detecting and efficiently picking up garbage with its scooper.",
+          "Sifts out sand from the garbage removed."
+        ],
+        links: {
+          online: "https://devpost.com/software/savyscooper",
+          github: "https://github.com/emilymamcarz/SavvyScooper"
+        }
+      },
+      {
+        title: "FerroFetcher",
+        image: "/assets/emily_img/ferrofetcher.jpg",
+        description: "A versatile and accessible metal retrieval robot.",
+        tools: "Dual Arduino Control, H-Bridge Motor Driver, Joystick Control, Electromagnet",
+        accomplishments: [
+          "Quickly collecting loose screws, bolts, and other metal items after household chores to create a safer environment.",
+          "Assists in retrieving and organizing metal components during construction or repairs."
+        ],
+        links: {
+          online: "https://devpost.com/software/ferrofetcher"
+        }
+      }
+      // Add more projects here!
+    ];
+
+    let displayedCount = 0; // Track how many projects are shown
+    const projectsPerLoad = 1; // Show 1 project at a time
+
+    function loadProjects() {
+      const container = document.getElementById("recent-projects-container");
+      const slice = projects.slice(displayedCount, displayedCount + projectsPerLoad);
+
+      slice.forEach(project => {
+        // Create card element
+        const card = document.createElement("div");
+        card.className = "col s12 m6 l4";
+
+        card.innerHTML = `
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img alt="${project.title}" src="${project.image}" style="height: 100%; width: 100%" class="activator" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator teal-text hoverline">
+                ${project.title}<i class="mdi-navigation-more-vert right"></i>
+              </span>
+              <p>${project.description}</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+              <ul>
+                <li><b>Tools:</b> ${project.tools}</li>
+                ${project.accomplishments.map(acc => `<li>${acc}</li>`).join("")}
+              </ul>
+              <div class="card-action">
+                ${project.links.online ? `<a href="${project.links.online}" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Online"><i class="fa fa-external-link"></i></a>` : ""}
+                ${project.links.github ? `<a href="${project.links.github}" target="_blank" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" data-tooltip="View Source"><i class="fa fa-github"></i></a>` : ""}
+              </div>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      displayedCount += slice.length;
+
+      // Hide button if all projects are displayed
+      if (displayedCount >= projects.length) {
+        document.getElementById("load-more-btn").style.display = "none";
+      }
+    }
+
+    // Load the first project on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      loadProjects();
+      document.getElementById("load-more-btn").addEventListener("click", loadProjects);
+    });
+  </script>
+
 </body>
 
 </html>
