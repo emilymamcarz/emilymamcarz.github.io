@@ -28,3 +28,5 @@ To view a live example, **[click here](https://emilymamcarz.github.io/)**
 
 <img src="README_images/ECE444-PRA1-Activity2.2.png" alt="Activity #2.1 Screenshot" width="300"/>
 
+### Activity-3: Changing the Theme Color of Your Personal Website
+
