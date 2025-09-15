@@ -30,3 +30,6 @@ To view a live example, **[click here](https://emilymamcarz.github.io/)**
 
 ### Activity-3: Changing the Theme Color of Your Personal Website
 
+<img src="README_images/ECE444-PRA1-Activity-3.1.png" alt="Activity #3.1 Screenshot" width="300"/>
+
+<img src="README_images/ECE444-PRA1-Activity-3.2.png" alt="Activity #3.2 Screenshot" width="300"/>
