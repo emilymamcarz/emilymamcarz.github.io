@@ -7,7 +7,6 @@
   overflow: hidden;
   /* display: inline-block; */
   
-  
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
@@ -200,7 +199,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(255, 182, 193);
+  color: #FFB6C1;
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -289,7 +288,7 @@ h3 {
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #FF69B4;
+  border-bottom: 5px solid #FFB6C1;
 }
 
 #intro.section .teal {
