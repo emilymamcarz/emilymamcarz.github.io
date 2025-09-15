@@ -39,3 +39,9 @@ To view a live example, **[click here](https://emilymamcarz.github.io/)**
 <img src="README_images/ECE444-PRA1-Activity-4.1.png" alt="Activity #4.1 Screenshot" width="300"/>
 
 <img src="README_images/ECE444-PRA1-Activity-4.2.png" alt="Activity #4.2 Screenshot" width="300"/>
+
+### Activity-5: Adding Dynamic Content with JavaScript
+
+<img src="README_images/ECE444-PRA1-Activity-5.1.png" alt="Activity #5.1 Screenshot" width="300"/>
+
+<img src="README_images/ECE444-PRA1-Activity-5.2.png" alt="Activity #5.2 Screenshot" width="300"/>
