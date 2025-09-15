@@ -33,3 +33,9 @@ To view a live example, **[click here](https://emilymamcarz.github.io/)**
 <img src="README_images/ECE444-PRA1-Activity-3.1.png" alt="Activity #3.1 Screenshot" width="300"/>
 
 <img src="README_images/ECE444-PRA1-Activity-3.2.png" alt="Activity #3.2 Screenshot" width="300"/>
+
+### Activity-4: Creating new section and embedding google maps
+
+<img src="README_images/ECE444-PRA1-Activity-4.1.png" alt="Activity #4.1 Screenshot" width="300"/>
+
+<img src="README_images/ECE444-PRA1-Activity-4.2.png" alt="Activity #4.2 Screenshot" width="300"/>
